@@ -218,6 +218,10 @@ nav {
 
 /* projects */
 
+.project {
+  margin-bottom: 135px;
+}
+
 .project__img {
   width: 100%;
   transition: all 500ms ease;
@@ -260,20 +264,22 @@ nav {
 
 .project:hover .project__description {
   opacity: 1;
+  transform: translateY(-50%)
 }
 
 .project__description {
   position: absolute;
   top: 50%;
   left: 90px;
-  transform: translateY(-50%);
+  transform: translateY(100%);
   max-width: 550px;
   z-index: 3;
   opacity: 0;
+  transition: transform 450ms, 300ms;
 }
 
 .project__description--para {
-  font-size: 25px;
+  font-size: 20px;
   margin: 16px 0;
 }
 
